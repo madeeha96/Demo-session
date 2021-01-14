@@ -1,0 +1,11 @@
+type Todo @model @auth {
+  id: ID!
+  name: String!
+  description: String
+}
+
+
+#@model for storing types in Amazon DynamoDB
+#@auth to define different authorization strategies.
+#@connection for specifying relationships between @model object types.
+#@searchable for streaming the data of a @model object type to Amazon
